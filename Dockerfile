@@ -1,6 +1,6 @@
 FROM ragb/nginx-static-serf
 
-RUN add-apt-repository ppa:ondrej/php5
+RUN add-apt-repository -y ppa:ondrej/php5
 RUN apt-get update -qy
 RUN apt-get install -qy nginx-extras php5-fpm php-apc
 
