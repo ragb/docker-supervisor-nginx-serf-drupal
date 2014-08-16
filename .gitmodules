@@ -1,0 +1,3 @@
+[submodule "nginx-conf"]
+	path = nginx-conf
+	url = git@github.com:perusio/drupal-with-nginx.git
