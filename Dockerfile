@@ -1,8 +1,8 @@
 FROM ragb/nginx-static-serf
 
-RUN add-apt-repository -qy ppa:ondrej/php5
+RUN add-apt-repository -y ppa:ondrej/php5
 RUN apt-get update -qy
-RUN apt-get install -qy nginx-extras php5-fpm php-apc
+RUN apt-get install -qy --force-yes nginx-extras php5-fpm php-apc
 
 # Make sure php-fpm is not ruining via upstart or something:
 RUN service php5-fpm stop
