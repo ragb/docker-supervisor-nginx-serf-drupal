@@ -13,6 +13,6 @@ ADD nginx-conf/ /etc/nginx
 RUN rm -rf /etc/nginx/.git
 
 ADD php-conf/www.conf /etc/php5/fpm/pool.d/
-ADD php-conf/php.in /etc/php5/fpm/
+ADD php-conf/php.ini /etc/php5/fpm/
 ADD supervisord-php5-fpm.conf /etc/supervisor/conf.d/supervisord-php5-fpm.conf
 
